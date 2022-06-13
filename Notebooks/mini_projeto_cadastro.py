@@ -1,8 +1,17 @@
+from encodings import utf_8
 import json
 
-def cadastrar_novos_usuarios():
-    with open()
+def cadastrar(cadastro):
+    nome = input("Digite o nome:")
+    cpf = input("Digite o CPF:")
+    email = input("Digite o email:")
 
+
+def cadastrar_novos_usuarios():
+    with open("cadastro_usuario.json", "w", encoding="utf8") as arquivo:
+        cadastro = json.loads(arquivo)
+        print("Cadastre o novo usuário, as informações obrigatórias são: Nome, CPF e e-mail, as opcionais são: data de nascimento, profissão e escolaridade.")
+        cadastrar(cadastro)
 def buscar_usuarios():
 def modificar_usuarios():
 def visualizar_all_usuarios():
